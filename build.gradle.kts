@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.ktor)
+    alias(libs.plugins.serialization)
 }
 
 group = "com.example"
@@ -11,6 +12,8 @@ application {
 }
 
 dependencies {
+
+    implementation(libs.ktor.server.json)
     implementation(libs.ktor.server.core)
     implementation(libs.ktor.server.conditional.headers)
     implementation(libs.ktor.server.auto.head.response)

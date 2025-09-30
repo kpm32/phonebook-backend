@@ -6,6 +6,7 @@ logback = "1.5.6"
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version = "1.6.10"}
 
 [libraries]
 ktor-server-core = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
@@ -20,6 +21,8 @@ ktor-server-conditional-headers = { module = "io.ktor:ktor-server-conditional-he
 ktor-server-auto-head-response = { module = "io.ktor:ktor-server-auto-head-response-jvm", version.ref = "ktor" }
 ktor-server-status-pages = { module = "io.ktor:ktor-server-status-pages-jvm", version.ref = "ktor" }
 ktor-server-host-common = { module = "io.ktor:ktor-server-host-common-jvm", version.ref = "ktor" }
+
+ktor-server-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.6.3"}
 
 logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
 

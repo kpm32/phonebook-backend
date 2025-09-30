@@ -1,6 +1,8 @@
 package com.example
 
 
-fun configureSerialization() {
-
+fun Application.configureSerialization() {
+    install(ContentNegotiation) {
+        json()
+    }
 }
